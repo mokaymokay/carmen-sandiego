@@ -28,7 +28,7 @@ Column birthday is a CHAR with max length of 5
 CREATE DATABASE Foo;
 
 CREATE TABLE person(
-  id serial PRIMARY KEY,
+  id SERIAL PRIMARY KEY,
   name VARCHAR,
   birthday VARCHAR(5)
 );
