@@ -6,8 +6,7 @@
 SELECT name, code, population
 FROM country
 WHERE region = 'Southern Europe' AND population <= 100000
-ORDER BY
- population ASC;
+ORDER BY population;
 
 -- Now that we're here, we have insight that Carmen was seen attending language
 -- classes in this country's officially recognized language. Check our databases
@@ -16,7 +15,7 @@ ORDER BY
 
 SELECT countrycode, language
 FROM countrylanguage
-WHERE countrycode = 'VAT' AND isofficial = 't';
+WHERE countrycode = 'VAT' AND isofficial = true;
 
 -- We have new news on the classes Carmen attended: our gumshoes tell us she's
 -- moved on to a different country, a country where people speak only the language
@@ -69,4 +68,4 @@ WHERE code = 'BRA';
 
 SELECT *
 FROM city
-WHERE population = '91084';
+WHERE population = 91084;
